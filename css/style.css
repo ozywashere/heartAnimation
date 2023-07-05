@@ -53,12 +53,12 @@ main::after {
     hsl(140, 100%, 50%),
     hsl(190, 100%, 50%),
     hsl(260, 100%, 50%),
-    hsl(330, 100%, 50%) 40%
+    hsl(300, 100%, 50%) 40%
   );
-  animation: subtle 9000ms infinite linear alternate;
+  animation: shade 0.7s infinite linear alternate;
 }
 
-@keyframes subtle {
+@keyframes shade {
   0% {
     opacity: 0;
   }
@@ -88,7 +88,7 @@ path {
     stroke-width: 6px;
   }
 }
-@keyframes subtle {
+@keyframes shade {
   100% {
     transform: rotate(1turn);
   }
