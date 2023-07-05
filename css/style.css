@@ -17,12 +17,11 @@ body {
   background: radial-gradient(
     circle at 55% 55%,
     hsl(0, 100%, 50%),
-    hsl(30, 100%, 50%),
-    hsl(60, 100%, 50%),
-    hsl(140, 100%, 50%),
-    hsl(190, 100%, 50%),
-    hsl(260, 100%, 50%),
-    hsl(330, 100%, 50%) 40%
+    hsl(20, 100%, 50%),
+    hsl(43, 100%, 50%),
+    hsl(93, 100%, 50%),
+    hsl(160, 100%, 50%),
+    hsl(247, 100%, 50%)
   );
 }
 svg {
@@ -48,12 +47,11 @@ main::after {
   background: radial-gradient(
     circle at 55% 55%,
     hsl(0, 100%, 50%),
-    hsl(30, 100%, 50%),
-    hsl(60, 100%, 50%),
-    hsl(140, 100%, 50%),
-    hsl(190, 100%, 50%),
-    hsl(260, 100%, 50%),
-    hsl(300, 100%, 50%) 40%
+    hsl(20, 100%, 50%),
+    hsl(43, 100%, 50%),
+    hsl(93, 100%, 50%),
+    hsl(160, 100%, 50%),
+    hsl(247, 100%, 50%)
   );
   animation: shade 0.7s infinite linear alternate;
 }
@@ -70,12 +68,12 @@ main::after {
   }
 }
 path {
-  stroke-width: 1px;
+  stroke-width: 2px;
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-dasharray: 300px;
-  animation: dash 10000ms -10000ms infinite linear alternate,
-    w 7200ms -7200ms infinite linear;
+  animation: dash 15s -15s infinite linear alternate,
+    width 15s -15s infinite linear;
 }
 @keyframes dash {
   100% {
@@ -83,7 +81,7 @@ path {
   }
 }
 
-@keyframes w {
+@keyframes width {
   100% {
     stroke-width: 6px;
   }
